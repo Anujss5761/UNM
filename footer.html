@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Section</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer {
+            background: url('image.png') center/cover no-repeat; /* Replace with actual image path */
+            color: white;
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        .footer::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(34, 49, 34, 0.8); /* Dark green overlay */
+            z-index: 1;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .footer-section {
+            width: 30%;
+            min-width: 250px;
+            margin-bottom: 20px;
+        }
+
+        .footer-section h3 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .footer-section p, .footer-section ul {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 5px;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 10px;
+            font-size: 14px;
+            position: relative;
+            z-index: 2;
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Address</h3>
+                <p>Put it plainly, we make Amazon easy! Allow us to manage your Amazon account and help you grow your online business.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Support</h3>
+                <p>Put it plainly, we make Amazon easy! Allow us to manage your Amazon account and help you grow your online business.</p>
+                <ul>
+                    <li>Amazon account</li>
+                    <li>Amazon account</li>
+                    <li>Amazon account</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Our Social Media Handles</h3>
+                <p>Put it plainly, we make Amazon easy! Allow us to manage your Amazon account and help you grow your online business.</p>
+                <ul>
+                    <li>Amazon account</li>
+                    <li>Amazon account</li>
+                    <li>Amazon account</li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Marketplace Services in India</h3>
+                <ul>
+                    <li>* Amazon Seller Registration</li>
+                    <li>• Amazon FBA Registration</li>
+                    <li>• Amazon Product Listing Services</li>
+                    <li>• Amazon Enhanced Brand Content (EBC)</li>
+                    <li>• Amazon Storefront Design</li>
+                    <li>• Amazon Seller Account Management</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © 2025 UNIVERSAL NEXUS MARKETING ALL RIGHTS RESERVED
+        </div>
+    </footer>
+
+</body>
+</html>
+
