@@ -383,6 +383,8 @@ section {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  background-color: #030304;
+  padding: 2%;
 }
 
 .text {
@@ -531,6 +533,8 @@ p {
 .header {
   text-align: center;
   margin-bottom: 40px;
+  background-color: #030304;
+  padding: 2%;
 }
 
 .service-categories {
@@ -547,6 +551,7 @@ p {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   flex: 1;
   min-width: 250px;
+  background-color: #030304;
 }
 
 .category h2 {
@@ -623,6 +628,7 @@ ul li {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 500px;
   width: 100%;
+  background-color: #030304;
 }
 
 h2 {
