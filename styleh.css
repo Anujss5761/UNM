@@ -13,6 +13,175 @@ body {
   padding: 20px;
 }
 
+
+nav {
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  right: 0;
+  top: 0;
+  font-family: 'Montserrat', sans-serif;
+  padding: 0 5%;
+  height: 70px;
+  /* background-color: #ffff; */
+  /* border: 1px solid black; */
+  /* display: grid; */
+  /* place-items: center; */
+  width: 98vw;
+}
+
+nav .logo {
+  float: left;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  /* color: #fff; */
+  color: white;
+}
+
+nav .links {
+  float: right;
+  padding: 0;
+  margin: 0;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav .links li {
+  list-style: none;
+}
+
+nav .links a {
+  display: block;
+  padding: 1em;
+  font-size: 16px;
+  font-weight: bold;
+  /* color: #fff; */
+  color: white;
+  text-decoration: none;
+}
+
+nav .links a:hover{
+text-decoration: underline;
+}
+
+#nav-toggle {
+  position: absolute;
+  top: -100px;
+}
+
+nav .icon-burger {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav .icon-burger .line {
+  width: 30px;
+  height: 5px;
+  /* background-color: #fff; */
+  background-color: black;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+      width: 98vw;
+      /* background-color: #fff; */
+      border: 0;
+  }
+
+  nav .logo {
+      float: none;
+      width: auto;
+      justify-content: center;
+      /* color: #030304; */
+  }
+
+  nav .links {
+      float: none;
+      position: fixed;
+      z-index: 9;
+      left: 0;
+      right: 0;
+      top: 70px;
+      bottom: 100%;
+      width: 98vw;
+      height: auto;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: #fff;
+      overflow: hidden;
+      box-sizing: border-box;
+      transition: all .5s ease-in-out;
+      width: 100vw;
+  }
+
+  nav .links a {
+      font-size: 20px;
+      color: #030304;
+  }
+
+  nav :checked~.links {
+      bottom: 0;
+  }
+
+  nav .icon-burger {
+      display: block;
+  }
+
+  nav :checked~.icon-burger .line:nth-child(1) {
+      transform: translateY(10px) rotate(225deg);
+  }
+
+  nav :checked~.icon-burger .line:nth-child(3) {
+      transform: translateY(-10px) rotate(-225deg);
+  }
+
+  nav :checked~.icon-burger .line:nth-child(2) {
+      opacity: 0;
+  }
+}
+
+.background-clip {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9) {
+  .background-clip {
+      width: 100%;
+      height: auto;
+  }
+
+}
+
+@media (min-aspect-ratio:16/9) {
+  .background-clip {
+      width: auto;
+      height: 150%;
+  }
+
+}
+
+.bmmm {
+  width: 98vw;
+  height: 70px;
+}
+
+
+
 /* Main section styling */
 .marketplace-section {
   display: flex;
@@ -25,7 +194,7 @@ body {
   max-width: 1200px;
   margin: auto;
   gap: 20px;
-  border: 4px solid #522546;
+  /* border: 4px solid #522546; */
   height: 550px;
   
 }
@@ -160,7 +329,7 @@ body {
   max-width: 1200px;
   margin: auto;
   gap: 20px;
-  border: 4px solid #522546;
+  /* border: 4px solid #522546; */
   margin: 50px auto;
 }
 
@@ -174,12 +343,17 @@ body {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 15px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .about-content p {
   font-size: 16px;
   line-height: 1.6;
   margin-bottom: 10px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
 }
 
 /* Images Section */
@@ -248,18 +422,30 @@ h2 {
   background-color: #030304;
   padding: 20px;
   border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: #45a049;
 }
 
 .service-card h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .service-card p {
   font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
   color: #555;
   margin-bottom: 15px;
+  color: rgb(255, 255, 255);
 }
 
 .service-card a {
@@ -313,17 +499,24 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   margin-top: 40px;
+  border-radius: 8px;
 }
 
 h2 {
   font-size: 2rem;
   margin-bottom: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
 }
 
 p {
   font-size: 1rem;
   color: #555;
   margin-bottom: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
 }
 
 @media (max-width: 768px) {
@@ -371,7 +564,9 @@ body {
 
 h2,
 h3 {
-  color: #333;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
 }
 
 section {
@@ -385,6 +580,7 @@ section {
   flex-wrap: wrap;
   background-color: #030304;
   padding: 2%;
+  color: white;
 }
 
 .text {
@@ -394,8 +590,10 @@ section {
 
 .text p {
   font-size: 1rem;
-  color: #555;
+  color: white;
   margin-bottom: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
 }
 
 .image {
@@ -441,7 +639,7 @@ section {
 
 h2,
 h3 {
-  color: #333;
+  color: white;
 }
 
 section {
@@ -462,7 +660,7 @@ section {
 
 .text p {
   font-size: 1rem;
-  color: #555;
+  color: white;
   margin-bottom: 15px;
 }
 
@@ -477,6 +675,14 @@ section {
   width: 100%;
   height: auto;
   border-radius: 8px;
+}
+
+.web-design{
+  height: 100%;
+  width: 90%;
+  border-radius: 16px;
+  /* border: 2px solid white; */
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {
@@ -511,7 +717,7 @@ section {
 
 h1,
 h2 {
-  color: #333;
+  color: white;
 }
 
 h1 {
@@ -521,7 +727,7 @@ h1 {
 
 p {
   font-size: 1.1rem;
-  color: #555;
+  color: white;
   margin-bottom: 40px;
 }
 
@@ -565,7 +771,7 @@ ul {
 
 ul li {
   font-size: 1rem;
-  color: #555;
+  color: white;
   margin-bottom: 10px;
 }
 
@@ -621,6 +827,7 @@ ul li {
   min-height: 100vh;
   /* background: white; */
   margin-top: 20px;
+  border-radius: 8px;
 }
 
 .form-container {
@@ -725,6 +932,7 @@ button.submit-btn:hover {
 
 .testimonial-section {
   padding: 40px 20px;
+  border-radius: 8px;
 }
 
 .testimonial-section h2 {
