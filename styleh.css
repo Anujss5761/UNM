@@ -87,7 +87,8 @@ nav .icon-burger .line {
   width: 30px;
   height: 5px;
   /* background-color: #fff; */
-  background-color: black;
+  /* background-color: black; */
+  background-color: white;
   margin: 5px;
   border-radius: 3px;
   transition: all .3s ease-in-out;
@@ -224,7 +225,7 @@ nav .icon-burger .line {
  
   /** Text Gradient Example */ 
   color: #d85f05; 
-  background-image: linear-gradient(45deg, #d85f05 , #a079cb 50%, #36028a 100%); 
+  background-image: linear-gradient(45deg, #ca5903 , #9e70cf 50%, #370686 100%); 
   background-clip: text; 
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent; 
@@ -293,7 +294,7 @@ nav .icon-burger .line {
   }
 
   .image-gallery img {
-    width: 80%;
+    width: 100%;
   }
 
   .text-content {
@@ -828,6 +829,7 @@ ul li {
   /* background: white; */
   margin-top: 20px;
   border-radius: 8px;
+  background-color: #030304;
 }
 
 .form-container {
@@ -886,6 +888,8 @@ button.submit-btn:hover {
   background-color: #45a049;
 }
 
+
+
 @media (max-width: 768px) {
   .form-container {
     padding: 20px;
@@ -937,9 +941,10 @@ button.submit-btn:hover {
 
 .testimonial-section h2 {
   font-size: 20px;
-  color: #2c3e50;
+  /* color: #2c3e50; */
   font-weight: bold;
   margin-bottom: 20px;
+  color: white;
 }
 
 .testimonial-grid {
@@ -949,7 +954,7 @@ button.submit-btn:hover {
   gap: 15px;
 }
 
-.testimonial-box {
+.testimonial-box1,.testimonial-box2,.testimonial-box3,.testimonial-box4 {
   width: 200px;
   height: 150px;
   background-color: #d3d3d3;
@@ -958,6 +963,39 @@ button.submit-btn:hover {
   align-items: center;
   justify-content: center;
   transition: transform 0.3s ease-in-out;
+}
+
+
+.testimonial-box1,.testimonial-box2,.testimonial-box3,.testimonial-box4 {
+  background-image: url('unm\ Logo/1685941173837.jpeg');
+  background-size: contain; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.testimonial-box1 {
+  background-image: url('unm\ Logo/1685941173837.jpeg');
+  background-size: contain; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.testimonial-box2 {
+  background-image: url('unm\ Logo/1700587537746.jpeg');
+  background-size: contain; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.testimonial-box3 {
+  background-image: url('unm\ Logo/images (1).jpeg');
+  background-size: contain; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.testimonial-box4 {
+  background-image: url('unm\ Logo/images (1).png');
+  background-size: contain; 
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .testimonial-box:hover {
