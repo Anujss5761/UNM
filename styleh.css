@@ -991,7 +991,7 @@ button.submit-btn:hover {
   gap: 15px;
 }
 
-.testimonial-box1,.testimonial-box2,.testimonial-box3,.testimonial-box4 {
+.testimonial-box1,.testimonial-box2,.testimonial-box3,.testimonial-box4,.testimonial-box5,.testimonial-box6,.testimonial-box7,.testimonial-box8.testimonial-box9,.testimonial-box10,.testimonial-box11,.testimonial-box12,.testimonial-box13,.testimonial-box14,.testimonial-box15,.testimonial-box16   {
   width: 200px;
   height: 150px;
   /* background-color: #d3d3d3; */
@@ -1006,16 +1006,11 @@ button.submit-btn:hover {
 }
 
 
-.testimonial-box1,.testimonial-box2,.testimonial-box3,.testimonial-box4 {
+.testimonial-box1,.testimonial-box2,.testimonial-box3,.testimonial-box4,.testimonial-box5,.testimonial-box6,.testimonial-box7,.testimonial-box8.testimonial-box9,.testimonial-box10,.testimonial-box11,.testimonial-box12,.testimonial-box13,.testimonial-box14,.testimonial-box15,.testimonial-box16  {
   background-image: url('unm\ Logo/1685941173837.jpeg');
   background-size: contain; 
   background-position: center;
   background-repeat: no-repeat;
-  aspect-ratio: 1.5;
-  object-fit: contain;
-  mix-blend-mode: color-burn;
-
-
 }
 
 .testimonial-box1 {
@@ -1042,6 +1037,43 @@ button.submit-btn:hover {
   background-position: center;
   background-repeat: no-repeat;
 }
+.testimonial-box5 {
+  background-image: url(UNM-Websites-images/Brands-Logos/ayuzera.png);
+}
+.testimonial-box6 {
+  background-image: url(UNM-Websites-images/Brands-Logos/Honeywell-Logo-705x397.png);
+}
+.testimonial-box7 {
+  background-image: url(UNM-Websites-images/Brands-Logos/drvedic_logo.webp);
+}
+.testimonial-box8 {
+  background-image: url(UNM-Websites-images/Brands-Logos/kreo.png);
+}
+.testimonial-box9 {
+  background-image: url(UNM-Websites-images/Brands-Logos/80e1f3d4-2b5c-4a7b-8a6f-9c0d1e2f3a4b.png);
+}
+.testimonial-box10 {
+  background-image: url(UNM-Websites-images/Brands-Logos/C9_4.webp);
+}
+.testimonial-box11 {
+  background-image: url(UNM-Websites-images/Brands-Logos/gentlebeast-logo_8525248e-dc8a-4b3a-93af-f12f65601999.webp);
+}
+.testimonial-box12 {
+  background-image: url(UNM-Websites-images/Brands-Logos/proathlix.webp);
+}
+.testimonial-box13 {
+  background-image: url(UNM-Websites-images/Brands-Logos/The\ Vitmain\ company.png);
+}
+.testimonial-box14 {
+  background-image: url(UNM-Websites-images/Brands-Logos/logo_mc.webp);
+}
+.testimonial-box15 {
+  /* background-image: url(UNM-Websites-images/Brands-Logos/); */
+}
+.testimonial-box16 {
+  /* background-image: url('unm\ Logo/images (1).png'); */
+}
+
 
 .testimonial-box:hover {
   transform: scale(1.05);
