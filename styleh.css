@@ -430,9 +430,20 @@ h2 {
   margin-bottom: 20px;
 }
 
+.hhs{
+  text-align: center;
+}
+
 .service-cards {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.service-cards-s {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
 }
@@ -441,7 +452,7 @@ h2 {
   /* background-color: #f9f9f9; */
   /* background-color: #030304; */
   /* border: 2px solid white; */
-  border: 2px solid black;
+  /* border: 2px solid black; */
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
@@ -482,6 +493,14 @@ h2 {
   text-decoration: underline;
 }
 
+
+.images-com{
+  width: 100%;
+  height: 30%;
+}
+
+
+
 /* Responsive design */
 @media (max-width: 768px) {
   .service-card {
@@ -516,23 +535,27 @@ h2 {
 
 
 .why-choose-us {
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
   /* background-color: #030304; */
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
   text-align: center;
   margin-top: 40px;
   border-radius: 8px;
+  display: grid;
+  place-items: center;
 }
 
-h2 {
-  font-size: 2rem;
+.why {
+  font-size: 3rem;
   margin-bottom: 20px;
   /* color: white; */
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
+  padding: 0 20px 0 20px;
+text-align: center;
 }
 
 p {
