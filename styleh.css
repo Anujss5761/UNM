@@ -199,7 +199,7 @@ nav .icon-burger .line {
   margin: auto;
   gap: 20px;
   /* border: 4px solid #522546; */
-  height: 550px;
+  height: 500px;
   
 }
 
@@ -207,10 +207,13 @@ nav .icon-burger .line {
   width: 50%;
   height: 100%;
   background-image: url(images/Herosection\ image.jpg);
-  background-position: center;
-  background-size: cover;
+  background-position: top;
+  background-size: contain;
   background-repeat: no-repeat;
   border-radius: 12px;
+  /* border: 2px solid black ; */
+  /* align-self: self-start; */
+  /* background-color: #030304; */
 }
 
 /* Text content styling */
@@ -219,17 +222,18 @@ nav .icon-burger .line {
   padding-right: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   /* border: 2px solid black ; */
-
-
+  height: 100%;
 }
 
 .text-content h2 {
-  font-size: 4rem;
+  font-size: 2.8rem;
   font-weight: bold;
   margin-bottom: 15px;
+  text-align: justify;
+  line-height: normal;
  
   /** Text Gradient Example */ 
   color: #d85f05; 
@@ -241,12 +245,27 @@ nav .icon-burger .line {
 }
 
 .text-content p {
-  font-size: 18px;
+  font-size: 1.4rem;
   line-height: 1.6;
   margin-bottom: 10px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  padding-top: 3%;
 }
 
+
+.text-content button {
+  padding: 10px 20px;
+  background-color: #522546;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 20px;
+  align-self: flex-start;
+  margin-top: 3%;
+
+}
 /* Image gallery styling */
 .image-gallery {
   flex: 1.5;
@@ -372,23 +391,13 @@ nav .icon-burger .line {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background-image: url('images/about\ section\ .jpg');
+  /* background-image: url('images/about\ section\ .jpg'); */
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 12px;
 }
 
-.about-images img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-image: url('images/about\ section\ .jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 12px;
-}
 
 /* Responsive Design for Tablets & Mobiles */
 @media (max-width: 768px) {
@@ -425,10 +434,6 @@ nav .icon-burger .line {
   margin-top: 20px;
 }
 
-h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
 
 .hhs{
   text-align: center;
@@ -438,14 +443,59 @@ h2 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
-  padding: 20px;
+  padding: 10px;
+  margin: 0 10% 0 10%;
+  padding: 0 5% 0 5%;
+  
+}
+
+.service-card h3 {
+  text-align: center;
+  line-height: normal;
+  font-size: 2rem;
+  padding: 5% 0 5% 0;
+}
+
+.service-card p {
+  text-align: center;
+  /* line-height: 10%; */
+}
+
+.service-card a {
+  background-color: #4CAF50;
+  padding: 2% 20% 2% 20%;
+  color: white;
+  border-radius: 2px;
+
 }
 
 .service-cards-s {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
   padding: 20px;
+  line-height: normal;
+  text-align: justify;
+}
+
+.service-cards-s .service-card {
+  background-color: rgb(84, 84, 196);
+  /* background-color: #030304; */
+  /* border: 2px solid white; */
+  /* border: 2px solid black; */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.service-cards-s .service-card h3{
+  text-align: center;
+  color: white;
+}
+
+.service-cards-s .service-card p{
+  text-align: center;
+  color: white;
 }
 
 .service-card {
@@ -457,6 +507,7 @@ h2 {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.5);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   background-color: rgb(84, 84, 196);
 }
 
 .service-card:hover {
@@ -470,22 +521,24 @@ h2 {
   margin-bottom: 10px;
   /* color: white; */
   color: black;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .service-card p {
   font-size: 1rem;
   font-family: Arial, Helvetica, sans-serif;
-  text-align: justify;
+  text-align: center;
   /* color: #555; */
-  color: black;
+  /* color: black; */
+  color: white;
   margin-bottom: 15px;
   /* color: rgb(255, 255, 255); */
 }
 
 .service-card a {
   font-size: 1rem;
-  color: #007bff;
+  color: white;
   text-decoration: none;
 }
 
@@ -496,7 +549,7 @@ h2 {
 
 .images-com{
   width: 100%;
-  height: 30%;
+  height: 45%;
 }
 
 
@@ -545,27 +598,55 @@ h2 {
   border-radius: 8px;
   display: grid;
   place-items: center;
+  /* border: 2px solid black; */
+  background-color: rgb(84, 84, 196);
+   border-radius: 10px;
 }
 
-.why {
-  font-size: 3rem;
+.why-choose-us .why {
+  font-size: 1.5rem;
   margin-bottom: 20px;
   /* color: white; */
-  color: black;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
   padding: 0 20px 0 20px;
 text-align: center;
 }
 
-p {
-  font-size: 1rem;
+.why-choose-us .why-s {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  /* color: white; */
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  padding: 0 20px 0 20px;
+text-align: center;
+}
+
+.why-choose-us .bul{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  /* color: white; */
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  padding: 0 20px 0 20px;
+   
+}
+
+.why-choose-us p {
+  font-size: 1.2rem;
   /* color: #555; */
   margin-bottom: 20px;
   /* color: white; */
-  color: black;
+  color: white;
   font-family: Arial, Helvetica, sans-serif;
   text-align: justify;
+   background-color: rgb(84, 84, 196);
+   
+   
 }
 
 @media (max-width: 768px) {
@@ -737,6 +818,10 @@ section {
   border-radius: 16px;
   /* border: 2px solid white; */
   overflow: hidden;
+  background-image: url(UNM-Websites-images/Images-for-web-components/Social\ Media\ Content\ Image.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
@@ -798,6 +883,17 @@ p {
   /* background-color: #030304; */
   color: white;
   padding: 2%;
+   background-color: rgb(84, 84, 196);
+   border-radius: 10px;
+}
+
+
+.header h1 {
+  color: white;
+}
+
+.header p {
+  color: white;
 }
 
 .service-categories {
